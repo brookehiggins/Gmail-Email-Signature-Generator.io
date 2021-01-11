@@ -1,0 +1,78 @@
+<!doctype html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+    <body>
+        <div style="text-align: center; width: 800px; margin: auto;">
+        <h1 style="font-family: Arial, Helvetica, sans-serif;">Email Signature Generator</h1>
+        <div style="background-color: rgba(226, 226, 226, 0.61); padding-bottom: 1px;">
+            <h2 style="text-decoration: underline; font-size: 15pt; padding-top: 2px;">Instructions</h2>
+            <ol style="text-align: left;">
+                <li>Fill the text entry fields with your correct information, (remember capitalization and dashes)</li>
+                <li>In a seperate window: go to your gmail, click the gear icon in the top right corner, click "See all settings", and scroll down to "Signatures"</li>
+                <li>Create and title a new signature</li>
+                <li>Highlight the completed Email Signature from below and drag it into the signature box on your Gmail page (this works best by having 2 windows open)</li>
+                <li>Scroll to the bottom and click "Save Changes" to save your new signature</li>
+            </ol>
+        </div>
+        <form action="">
+            <label for="yourName"><b>Enter Your Full Name: </b></label>
+            <br>
+            <input  type="text" name="yourName" id="nameInput" placeholder="Your Name"></input>
+            <br>
+            <label for="yourTitle"><b>Enter Your Title: </b></label>
+            <br>
+            <input type="text" name="yourTitle" id="titleInput" placeholder="What you do"></input>
+            <br>
+            <label for="yourCompany"><b>Enter Your Company Name: </b></label>
+            <br>
+            <input type="text" name="yourCompany" id="companyInput" placeholder="Where you work"></input>
+            <br>
+            <label for="phoneNumber"><b>Enter Your Phone Number: </b></label>
+            <br>
+            <input type="text" id="phoneNumberInput" placeholder="Your phone number">
+            <br>
+            <label for="email"><b>Enter Your Email: </b></label>
+            <br>
+            <input type="email" id="emailInput" placeholder="Your Email">
+            <br>
+            <label for="picture"><b>Upload Your Picture: </b></label>
+            <br>
+            <input type="url" id="imageInput">
+            <br>
+            <label for=""><b>Pick Company Color</b></label>
+            <input type="color" name="" id="colorPicker">
+        </form>
+        </div>
+        <br>
+        <br>
+        <div style="height: 110px; font-family: Helvetica, sans-serif; text-align: left;">
+            <table cellspacing="11" cellpadding="8">
+                <tbody>
+                    <tr>
+                        <td>
+                            <img id="yourImage" style="border-radius: 50%; height: 110px; width: 106px; overflow-y: hidden;" src="https://complianz.io/wp-content/uploads/2019/03/placeholder-300x202.jpg" alt="Profile Picture">
+                        </td>
+                        <td valign="top" style="padding-left: 0px; padding-top: 0px; padding-right: 0px;">
+                            <span id="name" style="color: #000000; font-family: 'Helvetica', sans-serif; font-size: 11pt; font-weight: bold;">Your Name</span>
+                            <br>
+                            <span id="title" style="margin-top: 0; margin-bottom: 0; color: #000000; font-family: 'Helvetica', sans-serif; font-size: 11pt; font-weight: normal;">Your Job Title</span>
+                            <span style="margin: 0;">
+                                <a href="https://greatwesternbuildings.com/"></a>
+                                <p id="company" style="margin: 0; margin-bottom: 10px; font-size: 10pt;">Your Company Name</p>
+                                <span id="phoneNumber" style="color: #000000; font-family: Helvetica, sans-serif; font-size: 10pt;">333-333-3333 </span>
+                                <span id="line" style="color: #451ef5; font-weight: bolder;">|</span>
+                                <span id="email" style="color: #000000; font-family: Helvetica, sans-serif; font-size: 10pt;"> Your@email.com</span>
+                            </span>
+                            <br>
+                            <button id="btn" style="background-color: #451ef5; height: 30px; border-radius: 5px; margin-top: 10px; border: 0;"><a target="_blank" href="https://www.youtube.com/watch?v=bM3Lis_KwJo&list=PL5sHC6-TPaoV8IxdBZJ3AfKen9yZShrR8" style="color: white; padding: 6px; font-size: 9pt;">Watch Featured Customer Videos</a></button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </body>
+    <script src="app.js"></script>
+
+</html>
