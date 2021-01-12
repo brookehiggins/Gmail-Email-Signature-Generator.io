@@ -62,3 +62,28 @@ updateButton = (e) => {
 
 const picker = document.getElementById('colorPicker')
 picker.addEventListener('change', updateButton)
+
+updateLink = (e) => {
+    const value2 = document.getElementById('hrefInput').src = e.target.value;
+    const btnLink = document.getElementById('buttonLink');
+    btnLink.href = value2;
+};
+
+const hrefUrl = document.getElementById('hrefInput')
+hrefUrl.addEventListener('change', updateLink)
+
+// updateButtonWordsValue = (e) => {
+//     document.getElementsByClassName('btnwrds').innerHTML = e.target.value
+// };
+
+// const buttonWordsInput = document.getElementById('buttonWordsInput')
+// buttonWordsInput.addEventListener('keyup', updateButtonWordsValue)
+
+updateButtonWords = (e) => {
+    const value3 = document.getElementById('buttonWordsInput').innerHTML = e.target.value;
+    const span = document.getElementById('buttonLink');
+    span.innerText = span.textContent = value3
+};
+
+const buttonWords = document.getElementById('buttonWordsInput')
+buttonWords.addEventListener('change', updateButtonWords)

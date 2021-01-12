@@ -1,11 +1,12 @@
 <!doctype html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
         <div style="text-align: center; width: 800px; margin: auto;">
-        <h1 style="font-family: Arial, Helvetica, sans-serif;">Email Signature Generator</h1>
-        <div style="background-color: rgba(226, 226, 226, 0.61); padding-bottom: 1px;">
+        <h2 style="font-family: Arial, Helvetica, sans-serif;">Email Signature Generator</h2>
+        <div class="instructions" style="background-color: rgb(253, 253, 253); padding-bottom: 1px;">
             <h2 style="text-decoration: underline; font-size: 15pt; padding-top: 2px;">Instructions</h2>
             <ol style="text-align: left;">
                 <li>Fill the text entry fields with your correct information, (remember capitalization and dashes)</li>
@@ -15,7 +16,9 @@
                 <li>Scroll to the bottom and click "Save Changes" to save your new signature</li>
             </ol>
         </div>
-        <form action="">
+        <br>
+        <form action="" style="background-color:rgba(29, 29, 29, 0.37);">
+            <div class="div1">
             <label for="yourName"><b>Enter Your Full Name: </b></label>
             <br>
             <input  type="text" name="yourName" id="nameInput" placeholder="Your Name"></input>
@@ -38,14 +41,24 @@
             <br>
             <label for="picture"><b>Upload Your Picture: </b></label>
             <br>
-            <input type="url" id="imageInput">
+            <input type="url" id="imageInput" placeholder="Image URL">
             <br>
-            <label for=""><b>Pick Company Color</b></label>
+            <label for="picture"><b>Enter Words for Button: </b></label>
+            <br>
+            <input type="text" id="buttonWordsInput" placeholder="Words for Button">
+            <br>
+            <label for="btnlink"><b>Enter Link for Button: </b></label>
+            <br>
+            <input type="url" id="hrefInput" placeholder="Your URL">
+            <br>
+            <label for=""><b>Pick Company Color: </b></label>
             <input type="color" name="" id="colorPicker">
+            </div>
         </form>
         </div>
         <br>
         <br>
+        <div class="white">
         <div style="height: 110px; font-family: Helvetica, sans-serif; text-align: left;">
             <table cellspacing="11" cellpadding="8">
                 <tbody>
@@ -65,12 +78,13 @@
                                 <span id="email" style="color: #000000; font-family: Helvetica, sans-serif; font-size: 10pt;"> Your@email.com</span>
                             </span>
                             <br>
-                            <button id="btn" style="background-color: #451ef5; height: 30px; border-radius: 5px; margin-top: 10px; border: 0;"><a target="_blank" href="https://www.youtube.com/watch?v=bM3Lis_KwJo&list=PL5sHC6-TPaoV8IxdBZJ3AfKen9yZShrR8" style="color: white; padding: 6px; font-size: 9pt;">Watch Featured Customer Videos</a></button>
+                            <button id="btn" style="background-color: #451ef5; height: 30px; border-radius: 5px; margin-top: 10px; border: 0;"><a id="buttonLink" target="_blank" href="https://www.youtube.com/watch?v=bM3Lis_KwJo&list=PL5sHC6-TPaoV8IxdBZJ3AfKen9yZShrR8" class="btnwrds" style="color: white; padding: 6px; font-size: 9pt;">Watch Featured Customer Videos</a></button>
                         </td>
                     </tr>
                 </tbody>
 
             </table>
+        </div>
         </div>
     </body>
     <script src="app.js"></script>
